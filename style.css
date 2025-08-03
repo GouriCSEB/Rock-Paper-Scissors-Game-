@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.game-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  width: 380px;
+}
+
+h1 {
+  margin-bottom: 5px;
+  font-size: 2em;
+}
+
+.subtitle {
+  font-size: 0.9em;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.mode-select button {
+  margin: 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1em;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mode-select button:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.choices {
+  margin: 20px 0;
+}
+
+.choice {
+  font-size: 2.5em;
+  margin: 0 15px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  padding: 15px 20px;
+  transition: 0.3s ease;
+}
+
+.choice:hover {
+  background: rgba(255,255,255,0.1);
+  transform: scale(1.2);
+}
+
+.result-container {
+  margin: 20px 0;
+}
+
+#result {
+  font-size: 1.5em;
+  color: #4fc3f7;
+  transition: 0.3s;
+}
+
+.score-board {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.score-board span {
+  font-weight: bold;
+}
+
+#turn-indicator {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffeb3b;
+}

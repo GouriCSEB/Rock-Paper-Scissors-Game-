@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Rock Paper Scissors</h1>
+    <p class="subtitle">Choose mode to play</p>
+
+    <!-- Mode Selection -->
+    <div class="mode-select">
+      <button id="pvc">Player vs Computer</button>
+      <button id="pvp">Player vs Player</button>
+    </div>
+
+    <!-- Choices -->
+    <div class="choices" id="choice-section" style="display:none;">
+      <p id="turn-indicator">Player 1, make your move!</p>
+      <button class="choice" data-choice="rock">✊</button>
+      <button class="choice" data-choice="paper">✋</button>
+      <button class="choice" data-choice="scissors">✌</button>
+    </div>
+
+    <!-- Result -->
+    <div class="result-container" style="display:none;">
+      <p class="player-choice">Player 1: ❓</p>
+      <p class="computer-choice">Player 2: ❓</p>
+      <h2 id="result">Make your move</h2>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="score-board" style="display:none;">
+      <p>👤 Player 1 Score: <span id="player-score">0</span></p>
+      <p id="second-player-label">💻 Computer Score: <span id="computer-score">0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
